@@ -3,7 +3,7 @@ import React from "react";
 const Intro = () => {
   return (
     <div className=" text-white py-8 relative" style={{ height: "50vh"}}>
-      <div className="absolute inset-0 bg-[url('/public/img/ultimatefishing.jpg')] bg-cover bg-center " style={{backgroundSize: "125%" }}></div>
+      <div className="absolute inset-0 bg-[url('/public/img/ultimatefishing.jpg')] bg-cover bg-center " style={{backgroundSize: "125%", backgroundRepeat: "no-repeat" }}></div>
       <div className="absolute inset-0 flex justify-start items-center">
         {/* Texte */}
         <div className="w-3/5 relative z-10">
