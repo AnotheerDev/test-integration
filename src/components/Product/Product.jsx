@@ -1,6 +1,7 @@
 import React from 'react';
 import RayonCard from '../RayonCard/RayonCard';
 import ProductCard from '../ProductCard/ProductCard';
+import BestCard from '../BestCard/BestCard';
 
 const Product = () => {
   const rayons = [
@@ -81,21 +82,54 @@ const Product = () => {
     },
   ];
 
+  const bestSellers = [
+    {
+      name: "I-JACK",
+      img: "/img/best1.png",
+      price: "6.45€",
+      cat: "MEGABASS",
+    },
+    {
+      name: "REALIS ROZANTE 63 SP",
+      img: "/img/best2.png",
+      price: "4.65€",
+      cat: "MEGABASS",
+    },
+    {
+      name: "WORM 217 ZERO DAN",
+      img: "/img/best3.png",
+      price: "4.65€",
+      cat: "DECOY",
+    },
+    {
+      name: "ONE UP SHAD 7\"",
+      img: "/img/best4.png",
+      price: "4.65€",
+      cat: "MEGABASS",
+    },
+    {
+      name: "MADSHAD 2 130",
+      img: "/img/best5.png",
+      price: "4.65€",
+      cat: "MEGABASS",
+    }
+  ];
+
   return (
-    <section className="mx-60">
-      <h2 className="text-2xl font-bold text-left my-8 ">
+    <section>
+      <h2 className="text-2xl font-bold text-left my-8 mx-60 ">
         <span className=" border-b-2 border-red-500">NO</span>S TOP RAYONS
       </h2>
-      <div className=" flex flex-wrap gap-4">
+      <div className=" flex flex-wrap gap-4 mx-60">
         {rayons.map((rayon, index) => (
           <RayonCard key={index} name={rayon.name} img={rayon.img} />
         ))}
       </div>
 
-      <h2 className="text-2xl font-bold text-left my-8 ">
+      <h2 className="text-2xl font-bold text-left my-8 mx-60 ">
         <span className=" border-b-2 border-red-500">NO</span>UVEAUTES
       </h2>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 mx-60">
         {products.map((product, index) => (
           <ProductCard
             key={index}
@@ -115,10 +149,10 @@ const Product = () => {
       </div>
 
       <div
-        className="bg-black text-white py-6 flex rounded-xl justify-around items-center "
+        className="bg-black text-white py-6 mx-60 flex rounded-xl justify-around items-center "
         style={{ borderRadius: "0 2rem 0 2rem" }}
       >
-        <div className='px-10'>
+        <div className="px-10">
           <h2 className="text-xl font-bold mb-4">
             VOUS NE SAVEZ PAS LE MATÉRIEL DONT VOUS AVEZ BESOIN ?
           </h2>
@@ -133,12 +167,11 @@ const Product = () => {
             <span>Poissons</span>
           </div>
 
-          <div className='py-10'>
-          <button className="bg-white text-black py-2 px-4">
-            Guidez-moi
-          </button>
+          <div className="py-10">
+            <button className="bg-white text-black py-2 px-4">
+              Guidez-moi
+            </button>
           </div>
-          
         </div>
 
         <div className="w-1/3">
@@ -151,7 +184,52 @@ const Product = () => {
         </div>
       </div>
 
+      <div
+        className="bg-[url('/public/img/mer.jpg')] bg-no-repeat bg-cover bg-center  py-12 px-4"
+        style={{
+          backgroundImage: `
+      linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),
+      linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
+      url('/public/img/mer.jpg')
+    `,
+          paddingTop: "3rem",
+          paddingBottom: "3rem",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+        }}
+      >
+        <div className="mx-60 my-32">
+          <h2 className="text-2xl font-bold text-left mb-8">
+            <span className="border-b-2 border-red-500">NO</span>S MEILLEURS
+            PRODUITS
+          </h2>
 
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            {/* grande best seller card */}
+            <div className="md:col-span-6">
+              <BestCard
+                name={bestSellers[0].name}
+                img={bestSellers[0].img}
+                price={bestSellers[0].price}
+                cat={bestSellers[0].cat}
+              />
+            </div>
+
+            {/* petite best seller card */}
+            <div className="md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {bestSellers.slice(1).map((bestSeller, index) => (
+                <ProductCard
+                  key={index}
+                  name={bestSeller.name}
+                  img={bestSeller.img}
+                  price={bestSeller.price}
+                  cat={bestSeller.cat}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
