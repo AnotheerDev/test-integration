@@ -13,7 +13,7 @@ const ProductCard = ({ name, img, info, price , cat }) => {
   
   return (
     <div 
-      className="border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out h-64 w-72 relative"
+      className="border bg-white border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out h-64 w-72 relative"
       style={{ borderRadius: '0 2rem 0 2rem' }}>
       <div className=" flex flex-col justify-between p-4">
         <p className={`text-white font-bold ${infoClass} bg-opacity-75 rounded px-2 self-end`}>{info}</p>
