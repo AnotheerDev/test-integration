@@ -4,6 +4,7 @@ import Intro from './components/Intro/Intro'
 import Product from './components/Product/Product'
 import Marques from './components/Marques/Marques'
 import Zoom from './components/Zoom/Zoom'
+import Conseil from './components/Conseil/Conseil'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Product />
       <Marques />
       <Zoom />
+      <Conseil />
     </main>
   )
 }
