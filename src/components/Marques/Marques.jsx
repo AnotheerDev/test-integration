@@ -46,9 +46,9 @@ const Marques = () => {
   ];
 
   return (
-    <div className="flex flex-col mx-60 my-8">
+    <div className="flex flex-col mx-60 my-32">
       <h2 className="text-2xl font-bold mb-12">
-        <span className="border-b-4 border-red-500">NOS</span> MARQUES PHARES
+        <span className="border-b-4 border-red-500">NO</span>S MARQUES PHARES
       </h2>
 
       <div className="flex flex-wrap items-center justify-center mb-8">
@@ -60,7 +60,7 @@ const Marques = () => {
       </div>
 
       <div className="flex justify-center">
-        <button className="bg-black text-white py-4 px-8 mt-10 mb-20">
+        <button className="bg-black text-white py-4 px-8 mt-10">
           Toutes nos marques
         </button>
       </div>
