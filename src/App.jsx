@@ -6,6 +6,7 @@ import Marques from './components/Marques/Marques'
 import Zoom from './components/Zoom/Zoom'
 import Conseil from './components/Conseil/Conseil'
 import Revendeur from './components/Revendeur/Revendeur'
+import Connecter from './components/Connecter/Connecter'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Zoom />
       <Conseil />
       <Revendeur />
+      <Connecter />
     </main>
   )
 }
