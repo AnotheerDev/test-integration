@@ -2,7 +2,7 @@ import React from 'react';
 import RayonCard from '../RayonCard/RayonCard';
 import ProductCard from '../ProductCard/ProductCard';
 import BestCard from '../BestCard/BestCard';
-import backgroundImageUrl from '../../img/background.jpg';
+import backgroundImageUrl from '../../img/mer.jpg';
 
 const Product = () => {
   const rayons = [
