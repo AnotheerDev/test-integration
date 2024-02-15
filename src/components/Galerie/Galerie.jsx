@@ -1,4 +1,15 @@
 import React from "react";
+import mosaique1 from "/img/mosaique1.jpg";
+import mosaique2 from "/img/mosaique2.png";
+import mosaique3 from "/img/mosaique3.png";
+import mosaique4 from "/img/mosaique4.png";
+import mosaique5 from "/img/mosaique5.png";
+import mosaique6 from "/img/mosaique6.jpg";
+import mosaique7 from "/img/mosaique7.jpg";
+import mosaique8 from "/img/mosaique8.jpg";
+import mosaique9 from "/img/mosaique9.png";
+import mosaique10 from "/img/mosaique10.png";
+import ultimatefishing from "/img/ultimatefishing.jpg";
 
 const Galerie = () => {
   return (
@@ -17,7 +28,7 @@ const Galerie = () => {
         {/* Première colonne: Une grande photo */}
         <div>
           <img
-            src="public/img/mosaique1.jpg"
+            src={mosaique1}
             alt="Grande"
             className="w-96 h-96 object-cover "
           />
@@ -26,23 +37,23 @@ const Galerie = () => {
         {/* Deuxième colonne: Une moyenne photo en haut et une flex row de petites photos en dessous */}
         <div>
           <img
-            src="public/img/mosaique2.png"
+            src={mosaique2}
             alt="Moyenne"
             className="aspect-square object-cover w-72 h-72"
           />
           <div className="flex gap-6 mt-4">
             <img
-              src="public/img/mosaique3.png"
+              src={mosaique3}
               alt="Petite"
               className="w-20 h-20"
             />
             <img
-              src="public/img/mosaique4.png"
+              src={mosaique4}
               alt="Petite"
               className="w-20 h-20"
             />
             <img
-              src="public/img/mosaique5.png"
+              src={mosaique5}
               alt="Petite"
               className="w-20 h-20"
             />
@@ -52,12 +63,12 @@ const Galerie = () => {
         {/* Troisième colonne: Deux photos l'une au-dessus de l'autre */}
         <div>
           <img
-            src="public/img/mosaique6.jpg"
+            src={mosaique6}
             alt="Moyenne"
             className="w-44 h-44 mb-8"
           />
           <img
-            src="public/img/mosaique7.jpg"
+            src={mosaique7}
             alt="Moyenne"
             className="w-44 h-44"
           />
@@ -67,23 +78,23 @@ const Galerie = () => {
         <div>
           <div className="flex gap-6 mb-4">
             <img
-              src="public/img/ultimatefishing.jpg"
+              src={ultimatefishing}
               alt="Petite"
               className="w-20 h-20"
             />
             <img
-              src="public/img/mosaique8.jpg"
+              src={mosaique8}
               alt="Petite"
               className="w-20 h-20"
             />
             <img
-              src="public/img/mosaique9.png"
+              src={mosaique9}
               alt="Petite"
               className="w-20 h-20"
             />
           </div>
           <img
-            src="public/img/mosaique10.png"
+            src={mosaique10}
             alt="Moyenne"
             className="w-72 h-72"
           />
