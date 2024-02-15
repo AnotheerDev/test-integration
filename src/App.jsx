@@ -7,6 +7,7 @@ import Zoom from './components/Zoom/Zoom'
 import Conseil from './components/Conseil/Conseil'
 import Revendeur from './components/Revendeur/Revendeur'
 import Connecter from './components/Connecter/Connecter'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Conseil />
       <Revendeur />
       <Connecter />
+      <Footer />
     </main>
   )
 }
