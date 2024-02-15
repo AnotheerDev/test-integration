@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <div>
             <img
-              src="public/img/logo.png"
+              src="/public/img/logo.png"
               alt="Ultimate Fishing Logo"
               className="w-60"
             />
