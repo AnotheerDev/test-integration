@@ -46,7 +46,7 @@ const Marques = () => {
   ];
 
   return (
-    <div className="flex flex-col mx-60 my-32">
+    <section className="flex flex-col mx-60 my-32">
       <h2 className="text-2xl font-bold mb-12">
         <span className="border-b-4 border-red-500">NO</span>S MARQUES PHARES
       </h2>
@@ -64,7 +64,7 @@ const Marques = () => {
           Toutes nos marques
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
