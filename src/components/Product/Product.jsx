@@ -185,7 +185,7 @@ const Product = () => {
       </div>
 
       <div
-        className="bg-[url('/public/img/mer.jpg')] bg-no-repeat bg-cover bg-center  py-12 px-4"
+        className="bg-no-repeat bg-cover bg-center  py-12 px-4"
         style={{
           backgroundImage: `
       linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),
