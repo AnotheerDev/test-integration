@@ -15,7 +15,7 @@ const Conseil = () => {
   ];
 
   return (
-    <div className="flex flex-col my-32">
+    <section className="flex flex-col my-32">
       <h2 className="text-2xl font-bold mb-12 mx-60">
         <span className="border-b-4 border-red-500">NO</span>S CONSEILS D'EXPERTS
       </h2>
@@ -35,7 +35,7 @@ const Conseil = () => {
           Tous nos conseils
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 
