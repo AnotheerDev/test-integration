@@ -1,4 +1,5 @@
 import React from "react";
+import bgZoom from "/img/bgzoom.jpg";
 
 const Zoom = () => {
   return (
@@ -10,7 +11,7 @@ const Zoom = () => {
       <div
         className="py-52 px-4 relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/img/bgzoom.jpg')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bgZoom}')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
