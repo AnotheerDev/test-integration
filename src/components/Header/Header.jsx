@@ -4,7 +4,7 @@ import logo from '/img/logo.png';
 const Header = () => {
   return (
     <header>
-      <span className='block text-center'>
+      <span className='block text-center bg-slate-200 font-thin text-xs'>
         Livraison offerte à partir de 100 euros d'achat
       </span>
       <div className="flex items-center justify-between mt-4 mx-40">
@@ -21,13 +21,16 @@ const Header = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 19l-6-6M7 11a5 5 0 1 0 0-2 5 5 0 0 0 0 2z" />
           </svg>
         </div>
-        {/* Bouton Accès détaillants */}
+        <div className='flex items-center gap-4'>
+                  {/* Bouton Accès détaillants */}
         <button className='ml-4 flex items-center border border-black px-4 py-2 rounded-full gap-2'>
           Accès détaillant
           <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.25" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
         </button>
         {/* Icone localisation */}
         <svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+        </div>
+
       </div>
       {/* Barre de navigation */}
       <div className='bg-black text-white text-center flex justify-center'>
