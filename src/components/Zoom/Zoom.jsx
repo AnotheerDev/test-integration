@@ -2,7 +2,7 @@ import React from "react";
 
 const Zoom = () => {
   return (
-    <div className="flex flex-col my-32">
+    <section className="flex flex-col my-32">
       <h2 className="text-2xl font-bold mb-12 mx-60">
         <span className="border-b-4 border-red-500">ZO</span>OM SUR
       </h2>
@@ -32,7 +32,7 @@ const Zoom = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
