@@ -2,6 +2,7 @@ import React from 'react';
 import RayonCard from '../RayonCard/RayonCard';
 import ProductCard from '../ProductCard/ProductCard';
 import BestCard from '../BestCard/BestCard';
+import backgroundImageUrl from '../../img/background.jpg';
 
 const Product = () => {
   const rayons = [
@@ -115,7 +116,6 @@ const Product = () => {
     }
   ];
 
-  const backgroundImageUrl = '/img/mer.jpg';
 
   return (
     <section>
