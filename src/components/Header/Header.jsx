@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '/img/logo.png';
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       </span>
       <div className="flex items-center justify-between mt-4 mx-40">
         {/* Logo */}
-        <img src="/public/img/logo.png" alt="logo" className="h-16 mr-4" />
+        <img src={logo} alt="logo" className="h-16 mr-4" />
         {/* Barre de recherche */}
         <div className="relative w-1/2">
           <input 

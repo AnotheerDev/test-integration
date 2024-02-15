@@ -6,6 +6,7 @@ import {
   FaTiktok,
   FaLinkedinIn,
 } from "react-icons/fa";
+import logo from "/img/logo.png";
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
         <div>
           <div>
             <img
-              src="/public/img/logo.png"
+              src={logo}
               alt="Ultimate Fishing Logo"
               className="w-60"
             />
