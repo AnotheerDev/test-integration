@@ -115,6 +115,8 @@ const Product = () => {
     }
   ];
 
+  const backgroundImageUrl = '/img/mer.jpg';
+
   return (
     <section>
       <h2 className="text-2xl font-bold text-left my-8 mx-60 ">
@@ -190,7 +192,7 @@ const Product = () => {
           backgroundImage: `
       linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%),
       linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
-      url('/public/img/mer.jpg')
+      url('${backgroundImageUrl}')
     `,
           paddingTop: "3rem",
           paddingBottom: "3rem",
