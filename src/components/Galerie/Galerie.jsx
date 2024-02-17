@@ -13,20 +13,20 @@ import ultimatefishing from "/img/ultimatefishing.jpg";
 
 const Galerie = () => {
   return (
-    <section className="py-32">
-      <div className="mb-12 mx-60">
+    <section className=" py-16 lg:py-32">
+      <div className="mb-12 mx-4 lg:mx-60">
         <h2 className="text-2xl font-bold mb-4">
           <span className="border-b-4 border-red-500">L'U</span>NIVERS D'ULTIMATE FISHING
         </h2>
-        <p>
+        <p className="hidden lg:block">
           Partage ta pêche du jour en taguant @ultimate__fishing et/ou avec le
           hashtag #Ultimatefishing
         </p>
       </div>
 
-      <div className="flex justify-center gap-6">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-center lg:gap-6">
         {/* Première colonne: Une grande photo */}
-        <div>
+        <div className="flex flex-col items-center mb-4">
           <img
             src={mosaique1}
             alt="Grande"
@@ -35,7 +35,7 @@ const Galerie = () => {
         </div>
 
         {/* Deuxième colonne: Une moyenne photo en haut et une flex row de petites photos en dessous */}
-        <div>
+        <div className="flex flex-col items-center mb-4">
           <img
             src={mosaique2}
             alt="Moyenne"
@@ -61,7 +61,7 @@ const Galerie = () => {
         </div>
 
         {/* Troisième colonne: Deux photos l'une au-dessus de l'autre */}
-        <div>
+        <div className="flex flex-col items-center mb-4">
           <img
             src={mosaique6}
             alt="Moyenne"
