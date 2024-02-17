@@ -2,7 +2,7 @@ import React from 'react';
 
 const ArticleCard = ({ name, img }) => {
   return (
-    <div className="text-center w-1/2 bg-cover bg-center flex flex-col shadow-md">
+    <div className="text-center my-5 lg:w-1/2 bg-cover bg-center flex flex-col shadow-md">
       <img src={img} alt="" className="w-full object-cover h-96" style={{ borderRadius: '2rem 2rem 0 0' }} />
       <p className="text-black font-bold text-left py-2 px-10">{name}</p>
       <div className="flex items-center justify-start py-5 px-10 text-red-500">

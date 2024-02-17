@@ -15,12 +15,12 @@ const Conseil = () => {
   ];
 
   return (
-    <section className="flex flex-col my-32">
-      <h2 className="text-2xl font-bold mb-12 mx-60">
+    <section className="flex flex-col lg:my-32">
+      <h2 className="text-2xl font-bold mx-4 py-8 lg:mb-12 lg:mx-60">
         <span className="border-b-4 border-red-500">NO</span>S CONSEILS D'EXPERTS
       </h2>
 
-      <div className="flex  gap-4 mx-60">
+      <div className="flex flex-col px-2 lg:flex-row lg:gap-4 lg:mx-60">
         {articles.map((article, index) => (
           <ArticleCard
             key={index}
@@ -31,7 +31,7 @@ const Conseil = () => {
       </div>
 
       <div className="flex justify-center">
-        <button className="bg-black text-white py-4 px-8 mt-10">
+        <button className="bg-black text-white py-4 px-8 m-10">
           Tous nos conseils
         </button>
       </div>
