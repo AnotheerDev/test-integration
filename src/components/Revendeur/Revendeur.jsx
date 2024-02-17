@@ -2,22 +2,21 @@ import React from "react";
 
 const Revendeur = () => {
   return (
-    <div className="bg-black text-white py-20 px-64 flex">
-      <div className="flex-1 pr-8">
+    <div className="bg-black text-white py-20 px-4 lg:px-64 flex flex-col lg:flex-row">
+      <div className="flex-1 mb-4 lg:mb-0 pr-8">
         <h3 className="text-3xl font-bold">
           TROUVER UN REVENDEUR PRÈS DE CHEZ VOUS
         </h3>
         <p className="my-4 font-thin">
-          Lorem ipsum dolor sit amet consectetur. Varius sem vitae turpis
-          habitant eget.
+          Lorem ipsum dolor sit amet consectetur. Varius sem vitae turpis habitant eget.
         </p>
       </div>
-      <div className="flex-1 pl-8 flex flex-col justify-between">
-        <div className="relative">
+      <div className="flex-1 lg:pl-8 flex flex-col justify-between">
+        <div className="relative mb-4 lg:mb-0">
           <input
             type="text"
             placeholder="Ville ou code postal"
-            className="w-full bg-black px-4 py-2  border-b border-gray-300 "
+            className="w-full bg-black px-4 py-2 border-b border-gray-300 "
           />
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +33,7 @@ const Revendeur = () => {
             />
           </svg>
         </div>
-        <button className="bg-white text-black py-2 px-4 flex items-center justify-center w-40 space-x-2">
+        <button className="bg-white text-black py-2 px-4 flex items-center justify-center w-full lg:w-40 space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="20"
