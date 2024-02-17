@@ -46,14 +46,14 @@ const Marques = () => {
   ];
 
   return (
-    <section className="flex flex-col mx-60 my-32">
-      <h2 className="text-2xl font-bold mb-12">
+    <section className="flex flex-col my-16 lg:mx-60 lg:my-32">
+      <h2 className="text-2xl font-bold mx-4 lg:mx-0 mb-12">
         <span className="border-b-4 border-red-500">NO</span>S MARQUES PHARES
       </h2>
 
       <div className="flex flex-wrap items-center justify-center mb-8">
         {marques.map((marque, index) => (
-          <div key={index} className="p-4" style={{ width: 'calc(20% - 1rem)' }}>
+          <div key={index} className="p-4 w-1/2 sm:w-1/3 lg:w-1/5">
             <img src={marque.img} alt={marque.name} className="w-full h-auto" />
           </div>
         ))}
@@ -67,5 +67,6 @@ const Marques = () => {
     </section>
   );
 };
+
 
 export default Marques;
