@@ -122,7 +122,7 @@ const Product = () => {
       <h2 className="text-2xl font-bold text-left px-4 lg:px-0 my-6 lg:my-8 lg:mx-60 ">
         <span className=" border-b-2 border-red-500">NO</span>S TOP RAYONS
       </h2>
-      <div className=" flex justify-center flex-wrap gap-4 lg:mx-60">
+      <div className=" flex justify-center flex-wrap lg:flex-nowrap gap-4 lg:mx-60">
         {rayons.map((rayon, index) => (
           <RayonCard key={index} name={rayon.name} img={rayon.img} />
         ))}
