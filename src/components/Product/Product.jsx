@@ -119,19 +119,19 @@ const Product = () => {
 
   return (
     <section>
-      <h2 className="text-2xl font-bold text-left my-8 mx-60 ">
+      <h2 className="text-2xl font-bold text-left px-4 lg:px-0 my-6 lg:my-8 lg:mx-60 ">
         <span className=" border-b-2 border-red-500">NO</span>S TOP RAYONS
       </h2>
-      <div className=" flex flex-wrap gap-4 mx-60">
+      <div className=" flex justify-center flex-wrap gap-4 lg:mx-60">
         {rayons.map((rayon, index) => (
           <RayonCard key={index} name={rayon.name} img={rayon.img} />
         ))}
       </div>
 
-      <h2 className="text-2xl font-bold text-left my-8 mx-60 ">
+      <h2 className="text-2xl font-bold text-left px-4 lg:px-0 my-6 lg:my-8 lg:mx-60 ">
         <span className=" border-b-2 border-red-500">NO</span>UVEAUTES
       </h2>
-      <div className="flex flex-wrap gap-4 mx-60">
+      <div className="flex justify-center flex-wrap gap-4 lg:mx-60">
         {products.map((product, index) => (
           <ProductCard
             key={index}
@@ -149,12 +149,12 @@ const Product = () => {
           Toutes nos nouveautés{" "}
         </button>
       </div>
-
+      
       <div
-        className="bg-black text-white py-6 mx-60 flex rounded-xl justify-around items-center "
+        className="bg-black text-white pt-4 m-4 lg:mx-60 flex flex-col lg:flex-row rounded-xl justify-around items-center"
         style={{ borderRadius: "0 2rem 0 2rem" }}
       >
-        <div className="px-10">
+        <div className="px-10 lg:order-2">
           <h2 className="text-xl font-bold mb-4">
             VOUS NE SAVEZ PAS LE MATÉRIEL DONT VOUS AVEZ BESOIN ?
           </h2>
@@ -162,13 +162,12 @@ const Product = () => {
             Laissez-nous vous aider à trier vos besoins selon différents
             critères
           </p>
-          <div className="flex justify-around text-sm mb-6">
+          <div className="flex flex-col gap-4 lg:flex-row justify-around text-sm mb-6">
             <span>Type matériel</span>
             <span>Fabricant</span>
             <span>Zone de pêche</span>
             <span>Poissons</span>
           </div>
-
           <div className="py-10">
             <button className="bg-white text-black py-2 px-4">
               Guidez-moi
@@ -176,11 +175,11 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="w-1/3">
+        <div className="lg:order-1 w-full lg:w-1/3">
           <img
             src="/img/canne.png"
             alt="canne"
-            className="flex object-cover"
+            className="object-cover w-full h-auto p-4"
             style={{ borderRadius: "0 2rem 0 2rem" }}
           />
         </div>
@@ -200,7 +199,7 @@ const Product = () => {
           paddingRight: "1rem",
         }}
       >
-        <div className="mx-60 my-32">
+        <div className="lg:mx-60 my-32">
           <h2 className="text-2xl font-bold text-left mb-8">
             <span className="border-b-2 border-red-500">NO</span>S MEILLEURS
             PRODUITS
@@ -218,16 +217,18 @@ const Product = () => {
             </div>
 
             {/* petite best seller card */}
-            <div className="md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              {bestSellers.slice(1).map((bestSeller, index) => (
-                <ProductCard
-                  key={index}
-                  name={bestSeller.name}
-                  img={bestSeller.img}
-                  price={bestSeller.price}
-                  cat={bestSeller.cat}
-                />
-              ))}
+            <div className="md:col-span-6 flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {bestSellers.slice(1).map((bestSeller, index) => (
+                  <ProductCard
+                    key={index}
+                    name={bestSeller.name}
+                    img={bestSeller.img}
+                    price={bestSeller.price}
+                    cat={bestSeller.cat}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
