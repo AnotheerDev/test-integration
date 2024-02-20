@@ -1,4 +1,6 @@
 import './index.css'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Header from './components/Header/Header'
 import Intro from './components/Intro/Intro'
 import Product from './components/Product/Product'
