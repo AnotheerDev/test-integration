@@ -1,8 +1,16 @@
-# React + Vite
+Test Integration avec React et Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce dépôt a été créé pour réaliser un test d'intégration basé sur un design Figma. Il fournit un modèle pour initialiser un projet React en utilisant Vite, intègre des règles ESLint pour assurer la qualité du code. Ce projet utilise également Tailwind CSS pour faciliter la mise en place du style.
 
-Currently, two official plugins are available:
+Caractéristiques :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Basé sur un design Figma pour le test d'intégration.
+- Utilisation de @vitejs/plugin-react avec Babel et @vitejs/plugin-react-swc avec SWC.
+- Configuration minimale pour démarrer avec React et Vite.
+- Intégration de Tailwind CSS pour un styling efficace et rapide.
+
+Comment Utiliser :
+
+- Clonez le dépôt.
+- Installez les dépendances (npm install).
+- Démarrez le serveur de développement (npm run dev).
